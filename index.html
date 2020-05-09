@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = 'stylesheet' href="6style.css"/>
+</head>
+<main class="main">
+<section id='landing-page' class="landing-page">
+    <p id='l-p-text'>Quiz App</p>
+    <button type="submit" id='start'>Start</button>
+</section>
+
+<section id='quiz-body' class="hidden">
+    <div id="scoreboard">
+        <p id='score'></p>
+    </div>
+    <div id="container-question">
+        <p id='quiz-question'></p>
+    </div>
+    <div id="container-option" class="option-container">
+            <div class='options' id='opt-1' onclick="clickMe(this)"></div>
+            <div class='options' id='opt-2' onclick="clickMe(this)"></div>
+            <div class='options' id='opt-3' onclick="clickMe(this)"></div>
+        </div>
+        <button type="submit" id="next" class="next-btn"  >Next</button>
+    </div>
+</section>
+
+<section id='end-page' class="hidden">
+    <p id='feedback'></p>
+    <p id='final-score'>Final Score</p>
+    <button type="submit">Home</button>
+</section>
+
+</main>
+<script src="script.js"></script>
+</body>
+
+</html>
