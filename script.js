@@ -91,10 +91,6 @@ let questions = [
         answer: 2
     }
 
-
-
-
-
 ]
 
 
@@ -123,11 +119,11 @@ opt3.setAttribute ('onclick', '');
 
 
 }
-nextBtn.addEventListener('click', function(e) {
+/*nextBtn.addEventListener('click', function(e) {
 nextBtn.setAttribute('disabled', 'disabled');
 nextQuestion();
 
-});
+});*/
 
 function nextQuestion (){
 
@@ -140,9 +136,10 @@ function nextQuestion (){
      
             opt.style.color = "";
             opt.style.backgroundColor = "";
-    
-        
     }
+
+    //Call the quizContent() here since you're looping through the questions
+    quizContent(index);
 
     index++;
     questionIndex++;
